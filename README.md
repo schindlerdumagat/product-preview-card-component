@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/product-preview-card-using-sass-css-preprocessor-and-media-queries-8cjuaYeni2)
-- Live Site URL: [Add live site URL here](https://schindlerdumagat.github.io/product-preview-card-component/)
+- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-using-sass-css-preprocessor-and-media-queries-8cjuaYeni2](https://www.frontendmentor.io/solutions/product-preview-card-using-sass-css-preprocessor-and-media-queries-8cjuaYeni2)
+- Live Site URL: [https://schindlerdumagat.github.io/product-preview-card-component/](https://schindlerdumagat.github.io/product-preview-card-component/)
 
 ## My process
 
