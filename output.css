@@ -28,12 +28,12 @@ article {
     margin: 0;
   }
 }
-article img {
+article .product-image {
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
 @media screen and (min-width: 48em) {
-  article img {
+  article .product-image {
     content: url("images/image-product-desktop.jpg");
     border-radius: 10px 0 0 10px;
   }
