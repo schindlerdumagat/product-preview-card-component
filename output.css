@@ -34,7 +34,6 @@ article .product-image {
 }
 @media screen and (min-width: 48em) {
   article .product-image {
-    content: url("images/image-product-desktop.jpg");
     border-radius: 10px 0 0 10px;
   }
 }
