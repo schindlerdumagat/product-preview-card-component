@@ -27,26 +27,27 @@
     <main>
       <h1 class="visually-hidden">Sample Product Preview Card Component</h1>
       <div class="card">
-        <img
-          class="card__img"
-          src="images/image-product-mobile.jpg"
-          alt="a chanel perfume that is laying on a surface with two strands of leaves on its sides"
-          srcset="
-            images/image-product-mobile.jpg  686w,
-            images/image-product-desktop.jpg 600w
-          "
-          sizes="(min-width: 48em) 300px, 343px"
-        />
+        <picture class="card__img">
+          <source srcset="images/image-product-desktop.jpg" media="(min-width: 48rem)">
+          <img
+            class="card__img"
+            src="images/image-product-mobile.jpg" 
+            alt="a chanel perfume that is laying on a surface with two strands of leaves on its sides"
+          >
+        </picture>
         <div class="card__content">
-          <span class="card__tag">PERFUME</span>
+          <p class="card__tag">PERFUME</p>
           <h2 class="card__title">Gabrielle Essence Eau De Parfum</h2>
           <p class="card__description">
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
           <div class="card__price-container">
-            <span class="card__price">$149.99</span>
-            <span class="card__price--striked">$169.99</span>
+            <p class="card__price">$149.99</p>
+            <s>
+              <span class="visually-hidden">This is the old price</span>
+              <p>$169.99</p>
+            </s>
           </div>
           <button class="card__button">
             <img class="card__button-icon" src="images/icon-cart.svg" alt="" />
