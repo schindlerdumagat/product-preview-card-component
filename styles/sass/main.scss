@@ -1,0 +1,89 @@
+@use 'reset';
+@use 'base';
+
+.card {
+    max-width: 37.5rem;
+    width: 100%;
+    border-radius: 10px;
+    background-color: base.$color-n3;
+
+    @media screen and (min-width: 48em) {
+        display: flex;
+    }
+
+    &__img {
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        width: 100%;
+
+        @media screen and (min-width: 48em) {
+            border-top-left-radius: inherit;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: inherit;
+        }
+    }
+
+    &__content {
+        padding: clamp(1.5rem, 0.8rem + 2.5vw, 2rem) ;
+        width: 100%;
+    }
+
+    &__tag {
+        display: block;
+        font-size: 0.75rem;
+        letter-spacing: 0.313em;
+        margin-bottom: clamp(12px, 0.8rem + 1vw, 20px) ;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-size: 2rem;
+        margin-bottom: clamp(16px, 0.8rem + 1.5vw, 24px);
+    }
+
+    &__description {
+        line-height: 1.64;
+        margin-bottom: clamp(24px, 0.8rem + 2.3vw, 29px);
+    }
+
+    &__price-container {
+        display: flex;
+        align-items: center;
+        gap: 19px;
+        margin-bottom: clamp(20px, 0.8rem + 2.2vw, 30px);
+    }
+
+    &__price {
+        color: base.$color-primary;
+        font-family: "Fraunces", serif;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &__price--striked {
+        text-decoration: line-through;
+    }
+
+    &__button {
+        cursor: pointer;
+        color: #FFFFFF;
+        font-weight: 700;
+        width: 100%;
+        border: none;
+        border-radius: 8px;
+        background-color: base.$color-primary;
+        padding: 1em 0;
+        transition: 300ms;
+
+        &:hover {
+            background-color: base.$color-primary--hover;
+        }
+    }
+
+    &__button-icon {
+        display: inline-block;
+        height: 100%;
+        margin-right: 11.5px;
+        vertical-align: middle;
+    }
+}
