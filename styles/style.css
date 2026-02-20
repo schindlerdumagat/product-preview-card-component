@@ -16,11 +16,6 @@ html {
   text-size-adjust: none;
 }
 
-/* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, p {
-  margin-block-end: 0;
-}
-
 /* Set shorter line heights on headings and interactive elements */
 h1, h2,
 button {
@@ -123,7 +118,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   padding: .75rem;
   background-color: var(--clr-cream);
   font-family: var(--ff-body);
@@ -149,6 +144,7 @@ h1, h2 {
 .product__img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .product__details {
